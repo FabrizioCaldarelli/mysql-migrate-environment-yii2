@@ -145,7 +145,7 @@ To launch the Yii2 action, put the file ```DatabaseMigrationController.php``` in
 REMEMBER
 --------
 
-This code contains references to login to database using root user. 
+This code contains references to login to database using root user (to create, drop database...). 
 
 I have put in config/main.php configuration file a new property inside ```components``` attribute with:
 
