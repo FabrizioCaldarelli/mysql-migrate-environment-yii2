@@ -134,3 +134,8 @@ Using ```array_diff_key``` (applied to array keys, tablename.columnname), you ch
 Finally we need to check if there are changes in column definition. In this case you firstly take the common columns from each tables of the two database (with ```array_intersect_key```) and then you check if there are different fields in column definition (with ```array_diff_assoc```). 
 
 In this moment I check only differences in IS_NULLABLE, COLUMN_DEFAULT, COLUMN_TYPE and COLUMN_COMMENT properties of each column definition. If there are other different properties, these are only printed out.
+
+TODO
+------------
+
+Check if table columns or tables are removed from production environment.
