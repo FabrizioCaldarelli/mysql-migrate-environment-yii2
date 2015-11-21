@@ -86,7 +86,7 @@ To clone the table you use ```CREATE TABLE IF NOT EXISTS tablename LIKE tablenam
             $type = $colsDev[$nameCol]['COLUMN_TYPE'];
             $comment = 'COMMENT "'.addslashes($colsDev[$nameCol]['COLUMN_COMMENT']).'"';
             
-            $sql = '-> ALTER TABLE '.$this->nameDbProd.'.'.$colsDev[$nameCol]['TABLE_NAME'].' ADD '.$nameCol.' '.$type.' '.$null.' '.$def.' '.$comment.';';
+            $sql = 'ALTER TABLE '.$this->nameDbProd.'.'.$colsDev[$nameCol]['TABLE_NAME'].' ADD '.$nameCol.' '.$type.' '.$null.' '.$def.' '.$comment.';';
             echo $sql."\n";
             \Yii::$app->dbRoot->createCommand($sql)->execute();
         }
@@ -105,7 +105,7 @@ To clone the table you use ```CREATE TABLE IF NOT EXISTS tablename LIKE tablenam
                     $type = $colsDev[$nameCol]['COLUMN_TYPE'];
                     $comment = 'COMMENT "'.addslashes($colsDev[$nameCol]['COLUMN_COMMENT']).'"';
                     
-                    $sql = '-> ALTER TABLE '.$this->nameDbProd.'.'.$colsDev[$nameCol]['TABLE_NAME'].' MODIFY '.$nameCol.' '.$type.' '.$null.' '.$def.' '.$comment.';';
+                    $sql = 'ALTER TABLE '.$this->nameDbProd.'.'.$colsDev[$nameCol]['TABLE_NAME'].' MODIFY '.$nameCol.' '.$type.' '.$null.' '.$def.' '.$comment.';';
                 }
                 else if(isset($arrDiff['ORDINAL_POSITION']))
                 {
