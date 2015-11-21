@@ -142,6 +142,21 @@ To launch the Yii2 action, put the file ```DatabaseMigrationController.php``` in
 
     ./yii database-migration/launch
 
+REMEMBER
+--------
+
+This code contains references to login to database using root user. 
+
+I have put in config/main.php configuration file a new property inside ```components``` attribute with:
+
+        'dbRoot' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=database_name',
+            'username' => 'root',
+            'password' => 'root_password',
+            'charset' => 'utf8',
+        ],  
+
 TODO
 ------------
 
