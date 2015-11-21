@@ -135,6 +135,13 @@ Finally we need to check if there are changes in column definition. In this case
 
 In this moment I check only differences in IS_NULLABLE, COLUMN_DEFAULT, COLUMN_TYPE and COLUMN_COMMENT properties of each column definition. If there are other different properties, these are only printed out.
 
+LAUNCH THE ACTION
+------------------
+
+To launch the Yii2 action, put the file ```DatabaseMigrationController.php``` in console/controllers folder and then from the root folder of Yii2 installation launch
+
+    ./yii database-migration/launch
+
 TODO
 ------------
 
