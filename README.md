@@ -1,4 +1,4 @@
-# MySQL migrate environment using Yii2
+# MySQL migration environment using Yii2
 
 It can happen that you work in development environment and you make changes to database tables structures, adding tables, or changing fields.
 
